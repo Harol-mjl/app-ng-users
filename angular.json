@@ -25,7 +25,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ]
           },
           "configurations": {
@@ -82,11 +82,16 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.sass"
             ]
           }
         }
       }
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "sass"
     }
   },
   "cli": {
