@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './features/pages/home/home.component';
+import {UsersFormComponent} from './pages/users/users-form/users-form';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent, title: 'Home' },
+  { path: '', component: UsersFormComponent, title: 'Home' },
   { path: '**', redirectTo: '' },
 ];
