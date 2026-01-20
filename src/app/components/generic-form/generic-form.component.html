@@ -1,0 +1,15 @@
+<form [formGroup]='formGroup' class="generic-form">
+    @for (field of config; track field.formControlName){
+      <div class='generic-form__field'>
+        <label [for]='field.formControlName'>
+          {{ field.label}}
+        </label>
+        <input
+          [id]='field.formControlName'
+          type='text'
+          [formControlName]='field.formControlName'
+          class='generic-form__input'
+        />
+      </div>
+    }
+</form>
